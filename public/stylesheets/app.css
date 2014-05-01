@@ -6149,6 +6149,35 @@ button.close {
 .default-player-footer {
   height: 100px; }
 
+.album-header-container {
+  margin-top: 55px;
+  margin-bottom: 25px; }
+
+.album-header-information {
+  margin-top: 45px;
+  margin-bottom: 20px; }
+  .album-header-information .album-title, .album-header-information .album-artist, .album-header-information .album-meta-info {
+    line-height: 150%; }
+  .album-header-information .album-title {
+    font-size: 48px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; }
+  .album-header-information .album-artist {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700; }
+  .album-header-information .album-meta-info {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500; }
+
+.table.album-song-listing {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+  .table.album-song-listing td {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4); }
+
 body, html {
   height: 100%; }
 
