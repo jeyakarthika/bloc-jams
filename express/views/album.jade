@@ -14,10 +14,16 @@ block content
     .row
       .col-md-12
         table.table.album-song-listing
-          tr
-            td
-              | #{index + 1}
-            td
-              | #{colorName}
-            td
-              | X:XX
+          each colorName, index in ['Blue', 'Green', 'Red', 'Pink', 'Magenta']  
+            tr.row
+              td.col-md-1 #{index + 1}
+              td.col-md-9 #{colorName}
+              td.col-md-2 X:XX
+              //- .col-md-1 #{index + 1}
+              //- .col-md-9 #{colorName}
+              //- .col-md-2 X:XX
+
+
+
+    //- .col-lg-6.col-xs-12.col-sm-12 Left Half
+    //- .col-lg-6.col-xs-12.col-sm-12 Right Half

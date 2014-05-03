@@ -6178,6 +6178,25 @@ button.close {
     padding: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.4); }
 
+.album-collection-container {
+  margin: 50px auto; }
+  .album-collection-container .thumbnail {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    height: 157px;
+    width: 157px;
+    padding: 0; }
+  .album-collection-container .album-name, .album-collection-container .artist-name, .album-collection-container .no-of-songs {
+    line-height: 70%;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; }
+  .album-collection-container .artist-name, .album-collection-container .no-of-songs {
+    opacity: 0.6; }
+  .album-collection-container .album-information {
+    margin-bottom: 20px; }
+
 body, html {
   height: 100%; }
 

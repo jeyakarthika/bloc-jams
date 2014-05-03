@@ -1,2 +1,29 @@
 // SASS for your album collection view
 
+.album-collection-container {
+  margin: 50px auto;
+
+  .thumbnail {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    height: 157px;
+    width: 157px;
+    padding: 0;
+  }
+
+  .album-name, .artist-name, .no-of-songs {
+    line-height: 70%;
+    font-size: 16px;
+    @include font-open-sans(300);
+  }
+
+  .artist-name, .no-of-songs {
+    opacity: 0.6;
+  }
+
+  .album-information {
+    margin-bottom: 20px;
+  }
+}
+
