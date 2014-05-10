@@ -3,7 +3,7 @@ extends layouts/player_layout
 block content
   .container.album-container
     .row.album-header-container
-      .col-md-3
+      .col-md-3.album-image
         img(src="/images/album-placeholder.png")
       .col-md-9.colmd-push-1
         .album-header-information
@@ -14,7 +14,7 @@ block content
     .row
       .col-md-12
         table.table.album-song-listing
-          each colorName, index in ['Blue', 'Green', 'Red', 'Pink', 'Magenta']  
+          //-each colorName, index in ['Blue', 'Green', 'Red', 'Pink', 'Magenta']  
             tr.row
               td.col-md-1 #{index + 1}
               td.col-md-9 #{colorName}
