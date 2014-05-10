@@ -131,7 +131,7 @@ var createSongRow = function(songNumber, songName, songLength) {
 
   var $newSongRow = $('<tr>');
 
-  $newSongRow.append('<td class="col-md-1">' + songNumber + '<a href="#" class="hidden glyphicon"></a></td>');
+  $newSongRow.append('<td class="col-md-1">' + songNumber + '<a href="#" class="fa fa-play"></a></td>');
   $newSongRow.append('<td class="col-md-9">' + songName + '</td>');
   $newSongRow.append('<td class="col-md-2">' + songLength + '</td>');
 
@@ -169,7 +169,11 @@ var playSong = function() {
   // body...
 }
 
-
+// String.match(regex)
+// var regex = new RegExp("/\album/", "gi") === /\album/
+// "/album"
+// /pattern/
+// `\` === escape
 if (document.URL.match(/\/album/)) {
 
   $(document).ready(function() {
@@ -187,7 +191,7 @@ if (document.URL.match(/\/album/)) {
 
     });
 
-    // event delegation (.album-song-listing)
+    // event delegation (.album-song-listing) for each row, to show play button
     var $songHovered = $('.album-song-listing');
     $songHovered.on('hover', 'tr', function(){
       $(this).find('td:first').append('<a href="#" class="play-button glphicon glyphicon-play"></a>');
@@ -195,6 +199,10 @@ if (document.URL.match(/\/album/)) {
       //hover off
     });
 
+    // event delegation for play buttons, which will set the playbutton to a pause button
+    // sets a class on that button so we know it's selected
+    // it could look in album-song-listing for other play buttons and hide them
+    $(".album-song-listing").find(".play-button").filter(":not(.selected)")
   });
 }
 
